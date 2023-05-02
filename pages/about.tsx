@@ -1,8 +1,9 @@
 import { langs } from "../constant";
 import { GetStaticProps } from "next";
 
-export default function Home({ locale }: Props) {
-  const { title, desc } = locale === "en" ? langs["en"].home : langs["fr"].home;
+export default function About({ locale }: Props) {
+  const { title, desc } =
+    locale === "en" ? langs["en"].about : langs["fr"].about;
 
   return (
     <section
